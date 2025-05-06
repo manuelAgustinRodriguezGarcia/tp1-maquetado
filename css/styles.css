@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Anton', sans-serif;
+  scroll-behavior: smooth;
   color:#e8e6c0
 }
 
@@ -98,6 +99,7 @@ header h1 {
   background-size: cover;
   height: 700px;
   position: relative;
+  border: solid 3px #e8e6c0;
 }
 
 .main_banner a {
@@ -119,6 +121,7 @@ header h1 {
   color: #144353;
 }
 
+/*SECCION POSTER*/
 .poster {
   width: 100%;
   height: 85vh;
@@ -166,3 +169,14 @@ header h1 {
   vertical-align: middle;
 }
 
+.poster_container p em { 
+  color: #ba0041;
+}
+
+.poster_container p strong {
+  color: #ba0041;
+}
+
+.poster_container p abbr {
+  color: #4ab0c7;
+}
