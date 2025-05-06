@@ -60,6 +60,8 @@ body {
 header h1 {
   display: inline-block;
   vertical-align: middle;
+  text-align: left;
+  width: 400px;
   font-size: 50px;
   transition: color .4s ease-in-out;
   color: #ba0041;
@@ -79,7 +81,7 @@ header h1 {
 #header_nav ul li {
   list-style: none;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 
 #header_nav ul li a {
@@ -99,7 +101,6 @@ header h1 {
   background-size: cover;
   height: 700px;
   position: relative;
-  border: solid 3px #e8e6c0;
 }
 
 .main_banner a {
@@ -145,11 +146,21 @@ header h1 {
   height: 600px;
 }
 
+.poster_container a{
+  text-decoration: none;
+}
+
 .poster_container_figure {
   display: inline-block;
   width: 400px;
   height: 100%;
   border: 2px solid #e8e6c0;
+  transition: all .3s ease-in-out;
+}
+
+.poster_container_figure:hover {
+  transform: skew(2deg, -2deg);
+  box-shadow: 0px 10px 25px #0000007b;
 }
 
 .poster_container_figure img{
@@ -179,4 +190,188 @@ header h1 {
 
 .poster_container p abbr {
   color: #4ab0c7;
+}
+
+/*TICKETS - ENTRADAS*/
+.entradas {
+  margin-top: 50px;
+  height: 85vh;
+  width: 100%;
+  background-image: linear-gradient(#7e002ccb, #0000004b), url(../images/backstage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: inline-block;
+  align-content: center;
+  text-align: center;
+}
+
+.entradas .entradas_container {
+  display: inline-block;
+  text-align: right;
+  align-content: center;
+  width: 1400px;
+  height: 600px;
+  color: #252525;
+}
+
+.entradas_container h2 {
+  display: inline-block;
+  font-size: 60px;
+  width: 100%;
+  text-align: right;
+  padding: 0 20px;
+  color: #e8e6c0;
+  background-color: rgba(186, 0, 65, 0.7);
+}
+
+.entradas_container p {
+  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.entradas_container a {
+  color: #e8e6c0;
+  font-size: 20px;
+  padding: 20px;
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+  border: solid 3px #e8e6c0;
+  background-color: rgba(232, 230, 192, 0.3);
+}
+
+.entradas_container a:hover {
+  background-color: #e8e6c0;
+  color: #144353;
+}
+
+/*TIENDA*/
+.tienda {
+  margin-top: 50px;
+  background-image: url(../images/banner-shop2.png);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  align-content: center;
+}
+
+.tienda_texto {
+  display: inline-block;
+  align-content: center;
+  text-align: center;
+  border: solid 3px #e8e6c0;
+  border-radius: 25px;
+  width: 490px;
+  height: 600px;
+  backdrop-filter: blur(5px);
+  background-color: #25252539;
+  transition: all .4s ease-in-out;
+}
+
+.tienda_texto h2 {
+  width: 490px;
+  line-height: 0.95;
+  font-size: 120px;
+  text-align: center;
+}
+.tienda_texto h3, .tienda_texto h4 {
+  width: 490px;
+  font-size: 45px;
+  text-align: center;
+  line-height: 0.95;
+}
+
+.tienda_texto p {
+  width: 490px;
+  font-size: 18px;
+  text-align: center;
+  white-space: pre;
+  line-height: 0.95;
+  margin-top: 15px;
+}
+
+.tienda_texto a {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 20px;
+  width: 160px;
+  padding: 15px;
+  height: 60px;
+  background-color: #ba0041;
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+}
+
+.tienda_texto:hover{
+  background-color: #ba0041;
+  color: #144353;
+}
+
+.tienda_texto:hover a {
+  background-color: #e8e6c0;
+  color: #ba0041;
+}
+
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ba0041;
+  padding: 50px 0 25px 0;
+}
+
+.footer_list {
+  width: 37%;
+  display: inline-block;
+  list-style: none;
+  vertical-align: top;
+  text-align: left;
+  font-size: 20px;
+}
+
+.footer_list li a {
+  color: #252525;
+  text-decoration: none;
+  transition: color .4s ease-in-out;
+}
+
+.footer_list li a:hover{
+  color: #e8e6c0;
+}
+
+.footer figure {
+  display: inline-block;
+  width: 25%;
+  height: auto;
+  text-align: right;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.footer figure img {
+  border: solid 3px #252525;
+  width: 250px;
+  transition: all .4s ease-in-out;
+}
+
+.footer figure figcaption {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  color: #252525;
+  width: 100%;
+  transition: all .4s ease-in-out;
+}
+
+.footer figure:hover img  {
+  border: solid 3px #e8e6c0;
+}
+
+.footer figure:hover figcaption {
+  color: #e8e6c0;
 }

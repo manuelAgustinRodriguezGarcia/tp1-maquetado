@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,27 +11,29 @@
     <title>Pink Floyd - Live at Pompeii</title>
   </head>
   <body>
+    <header class="header">
+      <h1>PINK FLOYD</h1>
+      <nav id="header_nav">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#news">Novedades</a></li>
+          <li><a href="#tickets">Entradas</a></li>
+          <li><a href="#shop">Tienda</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="center_container">
-      <header class="header">
-        <h1>PINK FLOYD</h1>
-        <nav id="header_nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#news">Novedades</a></li>
-            <li><a href="#albums">Entradas</a></li>
-            <li><a href="#about">Tienda</a></li>
-          </ul>
-        </nav>
-      </header>
-        <div class="main_banner">
-          <a href="https://pinkfloyd.film/" target="_blank" rel="noopener noreferrer">Conseguí tus entradas aquí.</a>
-        </div>
+      <div class="main_banner" title="Banner de Pink Floyd en Pompeya">
+        <a href="#tickets">Conseguí tus entradas aquí.</a>
+      </div>
     </div>
     <section class="poster" id="news">
       <div class="poster_container">
-        <figure class="poster_container_figure">
-          <img src="images/pink-floyd-at-pompeii-poster.jpg" alt="">
-        </figure>
+        <a href="images/pink-floyd-at-pompeii-poster.jpg" download title="Descargar poster de Pink Floyd en Pompeya">
+          <figure class="poster_container_figure">
+            <img src="images/pink-floyd-at-pompeii-poster.jpg" alt="Poster de Pink Floyd en Pompeya">
+          </figure>
+        </a>
         <p>          <em>Pink FLoyd en Pompeya – MCMLXXII</em>, la innovadora película de 1972 dirigida por Adrian Maben, regresa 
           a los cines, ahora remasterizada digitalmente en 4K a partir del metraje original en 35mm, con audio mejorado.
   
@@ -50,17 +52,45 @@
           <strong>Vive a Pink Floyd como nunca antes con esta remasterización pionera en imagen y sonido.</strong></p>
       </div>
     </section>
-    <br>
-    <input type="checkbox" name="" id="">header con nav y navegacion con #
-    <br>
-    <input type="checkbox" name="" id="">sections
-    <br>
-    <input type="checkbox" name="" id="">imagenes dentro de figures
-    <br>
-    <input type="checkbox" name="" id="">estilado en cascada
-    <br>
-    <input type="checkbox" name="" id="">em, strong y abbr en los parrafos
-    <br>
-    <input type="checkbox" name="" id="">footer
+    <section class="entradas" id="tickets">
+      <div class="entradas_container">
+        <h2>Conseguí tus entradas</h2>
+        <p>Las entradas para el evento de Pink Floyd en Pompeya ya están disponibles en la web oficial de la banda.</p>
+        <a href="https://pinkfloyd.film/" target="_blank" rel="noopener noreferrer">Página oficial para compra de entradas</a>
+      </div>
+    </section>
+    <section class="tienda" id="shop">
+    <div class="center_container">
+      <div class="tienda_texto">
+        <h2>PINK FLOYD</h2>
+        <h3>LIVE AT POMPEII</h3>
+        <h4>- MCMLXXII -</h4>
+        <p>CALIDAD PREMIUM - EDICION LIMITADA - ENVIO INTERNACIONAL</p>
+        <a href="https://store.pinkfloyd.com/collections/live-at-pompeii" target="_blank" rel="noopener noreferrer" title="Link a tienda oficial de merch de Pink Floyd">IR A LA TIENDA</a>
+      </div>
+    </div>
+    </section>
+    <footer class="footer">
+      <div class="center_container">
+        <ul class="footer_list">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#news">Novedades</a></li>
+          <li><a href="#tickets">Entradas</a></li>
+          <li><a href="#shop">Tienda</a></li>
+        </ul>
+        <ul class="footer_list">
+          <li><a href="https://www.instagram.com/pinkfloyd" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.youtube.com/pinkfloyd" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          <li><a href="https://open.spotify.com/intl-es/artist/0k17h0D3J5VfsdmQ1iZtE9?si=TUZ0CYA4Q6-FImB-15MTTg&nd=1&dlsi=ffbe7bbe0b74495a" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+          <li><a href="https://www.tiktok.com/@pinkfloyd" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+        </ul>
+        <figure>
+          <img src="images/personal_image.jpg" alt="">
+          <figcaption>Manuel Agustin Rodriguez Garcia
+            manuel.rodriguezg@davinci.edu.ar
+          </figcaption>
+        </figure>
+      </div>
+    </footer>
   </body>
 </html>
