@@ -116,22 +116,39 @@ header h1 {
 
 /*BANNER*/
 .main_banner {
-  margin-top: 150px;
-  background-image: url(../images/banner.jpg);
+  display: inline-block;
+  align-content: center;
+  text-align: center;
+  margin-top: 100px;
   background-color: #4ab0c7;
   width: 100%;
+  height: 90vh;
   background-repeat: no-repeat;
-  background-position: top;
+  background:linear-gradient(#000000, #ba00416d), url(../images/pinkFloydPompeii.jpg);
   background-size: cover;
-  height: 700px;
   position: relative;
+}
+
+.main_banner h2 {
+  display: inline-block;
+  width: 100%;
+  line-height: .95;
+  font-size: 120px;
+}
+
+.main_banner h3 {
+  display: inline-block;
+  font-size: 60px;
+  line-height: .95;
+  width: 100%;
 }
 
 .main_banner a {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
-  height: 120px;
+  height: 10vh;
   background-color: #ba0041;
   text-align: center;
   vertical-align: middle;
@@ -141,9 +158,9 @@ header h1 {
 }
 
 .main_banner a:hover {
-  background-color: #4ab0c7;
+  background-color: #e8e6c0;
   cursor: pointer;
-  color: #144353;
+  color: #ba0041;
 }
 
 /*SECCION POSTER*/
@@ -151,6 +168,11 @@ header h1 {
   width: 100%;
   height: 85vh;
   background-color: #144353;
+  background-image: url(../images/ruinas-textura.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
   display: inline-block;
   align-content: center;
   text-align: center;
@@ -205,11 +227,11 @@ header h1 {
 }
 
 .poster_container p em { 
-  color: #ba0041;
+  color: #ff0059;
 }
 
 .poster_container p strong {
-  color: #ba0041;
+  color: #ff0059;
 }
 
 .poster_container p abbr {
